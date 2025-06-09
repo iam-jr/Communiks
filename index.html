@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Communiks - Futuristic Design Studio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <h1 class="logo">Communiks</h1>
+      <nav class="nav">
+        <a href="#how-it-works">Cómo Funciona</a>
+        <a href="#services">Servicios</a>
+        <a href="#upload-section">Sube tu Foto</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <button class="btn-toggle" id="dark-mode-toggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Diseñamos lo que imaginas, al futuro y más allá</h2>
+      <p>Sube una foto y nuestro estudio te entregará un diseño único, personalizado y futurista. Moda, espacios, arte, tecnología... ¡Lo que quieras!</p>
+      <a href="#upload-section" class="btn-primary">Comenzar</a>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h3>¿Cómo Funciona?</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="icon"><i class="fas fa-upload"></i></div>
+          <h4>1. Sube tu imagen</h4>
+          <p>Selecciona una foto o imagen que represente tu idea.</p>
+        </div>
+        <div class="step">
+          <div class="icon"><i class="fas fa-brain"></i></div>
+          <h4>2. Nuestro sistema procesa tu idea</h4>
+          <p>Usamos tecnología avanzada para entender lo que quieres crear.</p>
+        </div>
+        <div class="step">
+          <div class="icon"><i class="fas fa-paint-brush"></i></div>
+          <h4>3. Recibe tu diseño futurista</h4>
+          <p>En poco tiempo, te entregamos un diseño único, listo para materializarse.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h3>Nuestros Servicios</h3>
+      <div class="services-list">
+        <article>
+          <i class="fas fa-tshirt service-icon"></i>
+          <h4>Diseño de Moda</h4>
+          <p>Ropa, accesorios y más con un estilo vanguardista y tecnológico.</p>
+        </article>
+        <article>
+          <i class="fas fa-couch service-icon"></i>
+          <h4>Diseño de Interiores</h4>
+          <p>Espacios modernos y futuristas para tu hogar o negocio.</p>
+        </article>
+        <article>
+          <i class="fas fa-robot service-icon"></i>
+          <h4>Arte Digital & Tecnología</h4>
+          <p>Conceptos visuales que combinan arte con innovación tecnológica.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="upload-section" class="upload-section">
+    <div class="container">
+      <h3>Sube tu Foto</h3>
+      <p>El primer paso para crear el diseño de tus sueños.</p>
+      <form id="upload-form" class="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file-upload" class="upload-label">
+          <i class="fas fa-upload"></i> Elegir imagen
+        </label>
+        <input type="file" id="file-upload" name="image" accept="image/*" required />
+        <div id="preview-container" class="preview-container"></div>
+        <button type="submit" class="btn-primary">Enviar y Diseñar</button>
+      </form>
+      <div id="response-message" class="response-message"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3>Contacto</h3>
+      <p>¿Tienes preguntas? Escríbenos.</p>
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="name" placeholder="Tu nombre" required />
+        <input type="email" id="email" placeholder="Tu email" required />
+        <textarea id="message" placeholder="Tu mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Communiks. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
